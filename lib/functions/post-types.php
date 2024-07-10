@@ -6,7 +6,7 @@
  *
  * @package   ucsc
  * @since     0.1.0
- * @link      https://github.com/ucsc/ucsc-custom-functionality.git
+ * @link      https://github.com/ucsc/ucsc-news-functionality.git
  * @author    UC Santa Cruz
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
