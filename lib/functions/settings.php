@@ -11,8 +11,9 @@
  * @license      http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
-/** Register new menu and page */
-
+/** 
+ * Register new menu and page
+ */
 if ( ! function_exists( 'ucsc_news_add_settings_page' ) ) {
 	function ucsc_news_add_settings_page() {
 		add_options_page( 'UCSC News Functionality plugin page', 'UCSC News Functionality', 'manage_options', 'ucsc-news-functionality-settings', 'ucsc_news_render_plugin_settings_page' );
@@ -27,9 +28,7 @@ add_action( 'admin_menu', 'ucsc_news_add_settings_page' );
  * note: This page typically displays a form for displaying any settings options. 
  * It is not needed at this point.
  * https://developer.wordpress.org/plugins/settings/custom-settings-page/
- *
  */
-
 if ( ! function_exists( 'ucsc_news_render_plugin_settings_page' ) ) {
 	function ucsc_news_render_plugin_settings_page() {
 		$plugin_data = get_plugin_data( WP_PLUGIN_DIR . '/ucsc-news-functionality/plugin.php');

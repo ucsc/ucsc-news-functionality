@@ -1,0 +1,52 @@
+{
+    "name": "ucsc-news-functionality",
+    "version": "0.1.0",
+    "description": "Additional news content management tools to UCSC WordPress websites.",
+    "scripts": {
+        "zip": "wp-scripts plugin-zip",
+        "packages-update": "wp-scripts packages-update"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ucsc/ucsc-news-functionality.git"
+    },
+    "keywords": [
+        "WordPress",
+        "plugin"
+    ],
+    "author": "UC Santa Cruz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ucsc/ucsc-news-functionality/issues"
+    },
+    "homepage": "https://github.com/ucsc/ucsc-news-functionality#readme",
+    "devDependencies": {
+        "@wordpress/scripts": "^22.3.0"
+    },
+    "files": [
+        "!node_modules",
+        "!vendor",
+        "!package.json",
+        "lib",
+        "plugin.php",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE"
+    ],
+    "standard-version": {
+        "bumpFiles": [
+            {
+                "filename": "package-lock.json",
+                "type": "json"
+            },
+            {
+                "filename": "package.json",
+                "type": "json"
+            },
+            {
+                "filename": "plugin.php",
+                "updater": "standard-version-updater.js"
+            }
+        ]
+    }
+}
