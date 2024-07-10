@@ -48,27 +48,3 @@ if ( file_exists( NEWS_DIR . '/lib/functions/acf.php' ) ) {
 if ( file_exists( NEWS_DIR . '/lib/blocks/blocks.php' ) ) {
 	include_once NEWS_DIR . '/lib/blocks/blocks.php';
 }
-
-/** 
- * Add link to Settings page from Plugins
- */
-// add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'ucsc_news_functionality_plugin_action_links' );
-
-if ( ! function_exists( 'ucsc_news_functionality_plugin_action_links' ) ){
-	function ucsc_news_functionality_plugin_action_links( $links ) {
-		// Build and escape the URL.
-		$url = esc_url( add_query_arg(
-			'page',
-			'ucsc-news-functionality-settings',
-			get_admin_url() . 'options-general.php'
-		) );
-		// Create the link.
-		$settings_link = "<a href='$url'>" . __( 'Settings' ) . '</a>';
-		// Adds the link to the end of the array.
-		array_push(
-			$links,
-			$settings_link
-		);
-		return $links;
-	}
-}
