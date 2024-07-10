@@ -22,7 +22,7 @@ if ( ! function_exists( 'ucsc_news_register_media_coverage_post_type' ) ) {
 	{
 		$labels = array(
 		'name' => 'Media Coverage',
-		'singular_name' => 'Media Coverage link',
+		'singular_name' => 'Media Coverage',
 		'add_new' => 'Add New',
 		'add_new_item' => 'Add New Media Coverage',
 		'edit_item' => 'Edit Media Coverage link',
@@ -49,7 +49,7 @@ if ( ! function_exists( 'ucsc_news_register_media_coverage_post_type' ) ) {
 		'hierarchical' => false,
 		'menu_icon' => 'dashicons-welcome-view-site',
 		'menu_position' => 23,
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+		'supports' => array('author', 'editor', 'excerpt', 'thumbnail', 'title'),
 		'taxonomies' => array( 'post_tag', 'category')
 		);
 
