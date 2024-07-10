@@ -1,13 +1,14 @@
 <?php
 /**
  * Plugin Name: UCSC News Functionality
- * Plugin URI: https://github.com/ucsc/ucsc-news-functionality.git
- * Description: Adds custom functionality to UCSC News information.
+ * Plugin URI: https://github.com/ucsc/ucsc-news-functionality/
+ * Description: Adds additional news content management tools to UCSC WordPress websites.
  * Version: 0.1.0
  * Author: UC Santa Cruz
  * Author URI: https://github.com/ucsc
- * Update URI: https://github.com/ucsc
  * License: GPL2
+ * Network: true
+ * Update URI: https://github.com/ucsc/ucsc-news-functionality/
  * Requires Plugins: advanced-custom-fields-pro
  * 
  * @package ucsc-news-functionality
