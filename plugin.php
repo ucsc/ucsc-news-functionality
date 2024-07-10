@@ -3,7 +3,7 @@
  * Plugin Name: UCSC News Functionality
  * Plugin URI: https://github.com/ucsc/ucsc-news-functionality/
  * Description: Adds additional news content management tools to UCSC WordPress websites.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: UC Santa Cruz
  * Author URI: https://github.com/ucsc
  * License: GPL2
