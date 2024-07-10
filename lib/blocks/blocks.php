@@ -2,14 +2,14 @@
 
 add_action( 'init', 'ucsc_news_blocks_setup' );
 
-/*
+/**
 *  Initialize blocks.
 */
 if ( ! function_exists( 'ucsc_news_blocks_setup' ) ) {
 	
 	function ucsc_news_blocks_setup() {
 	
-		/*
+		/**
 		*  Array custom functionality blocks for news.
 		*/
 		$news_blocks = [
@@ -19,12 +19,12 @@ if ( ! function_exists( 'ucsc_news_blocks_setup' ) ) {
 		foreach ($news_blocks as $block) {
 			$block_name = explode('/', $block);
 		
-			/*
+			/**
 			* Register new blocks.
 			*/
 			register_block_type( NEWS_DIR . '/lib/blocks/' . $block_name[1] );
 		
-			/*
+			/**
 			* Load additional block styles if present.
 			*/
 			if ( file_exists( NEWS_DIR . '/lib/blocks/' . $block_name[1] . '/' . 'style.css' ) ) {
@@ -42,7 +42,7 @@ if ( ! function_exists( 'ucsc_news_blocks_setup' ) ) {
 	}
 }
 
-/*
+/**
 *  Callback functions for blocks.
 */
 
