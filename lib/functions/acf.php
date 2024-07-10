@@ -14,11 +14,11 @@
 if ( function_exists( 'acf_add_local_field_group' ) ) :
 
 	acf_add_local_field_group( array(
-	'key' => 'group_667dbfccb0d8f',
+	'key' => 'group_ucsc_media_coverage_field_group',
 	'title' => 'Media Coverage',
 	'fields' => array(
 		array(
-			'key' => 'field_667dd39c81253',
+			'key' => 'field_ucsc_media_coverage_field_article_source',
 			'label' => 'Article Source',
 			'name' => 'article_source',
 			'aria-label' => '',
@@ -38,7 +38,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 			'append' => '',
 		),
 		array(
-			'key' => 'field_667dbfea5823c',
+			'key' => 'field_ucsc_media_coverage_field_article_url',
 			'label' => 'Article URL',
 			'name' => 'article_url',
 			'aria-label' => '',
