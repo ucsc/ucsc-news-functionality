@@ -59,3 +59,20 @@ if ( ! function_exists( 'ucsc_news_register_media_coverage_post_type' ) ) {
 
 add_action('init', 'ucsc_news_register_media_coverage_post_type');
 
+/**
+	 * Add query loop block variation for Media Coverage
+	 *
+	 * @since 1.0.1
+	 * @link  https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block/
+	 */
+function ucsc_news_enqueue_block_variations() {
+	wp_enqueue_script(
+		'ucsc-news-enqueue-block-variations',
+		plugin_dir_url( __DIR__ ) . '/scripts/variations.js',
+		array( 'wp-blocks', 'wp-dom-ready' ),
+		wp_get_theme()->get( 'Version' ),
+		false
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'ucsc_news_enqueue_block_variations' );
+
