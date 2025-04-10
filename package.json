@@ -1,6 +1,6 @@
 {
     "name": "ucsc-news-functionality",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Additional news content management tools to UCSC WordPress websites.",
     "scripts": {
         "zip": "wp-scripts plugin-zip",
