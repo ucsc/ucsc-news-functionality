@@ -35,6 +35,11 @@ if ( file_exists( NEWS_DIR . '/lib/functions/settings.php' ) ) {
 	include_once NEWS_DIR . '/lib/functions/settings.php';
 }
 
+// Dashboard Widgets.
+if (file_exists(NEWS_DIR . '/lib/functions/dashboard-widgets.php')) {
+	include_once NEWS_DIR . '/lib/functions/dashboard-widgets.php';
+}
+
 // Custom Post Types.
 if ( file_exists( NEWS_DIR . '/lib/functions/post-types.php' ) ) {
 	include_once NEWS_DIR . '/lib/functions/post-types.php';
